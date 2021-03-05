@@ -1,5 +1,8 @@
 # semantic-segmentation
+This is the final project of CS446 Machine Learning course and the details can be found here.
+https://relate.cs.illinois.edu/course/CS446-fa20/page/project/
 
+## Overall Process
 Each sample, the brain tumor of human, is represented by a tensor of size = 4 x H x W x D, where the four 3D tensor represents the a) native (T1) and b) post-contrast T1-weighted (T1Gd), c) T2-weighted (T2), and d) T2 Fluid Attenuated Inversion Recovery (T2-FLAIR) volumes of tumor scan. You are expected to predict the tumor segmentation at voxel level, i.e. the output dimension for each sample would be H x W x D. 
 Each sample does not have the fixed dimension - H, W, and D, so our are model handles this circumstance accordingly. 
 
@@ -14,7 +17,7 @@ This file imports the trained model defined by
 ```bash
 checkpoint = torch.load('trained_model.npy')
 ```
-and outputs prediction using the test dataset. 
+and outputs prediction using the test dataset.
 
 
 ## utils.py
